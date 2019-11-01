@@ -15,7 +15,11 @@ Rails.application.configure do
   # Configure public file server for tests with Cache-Control for performance.
   config.public_file_server.enabled = true
   config.public_file_server.headers = {
+<<<<<<< HEAD
     'Cache-Control' => "public, max-age=#{1.hour.seconds.to_i}"
+=======
+    'Cache-Control' => "public, max-age=#{1.hour.to_i}"
+>>>>>>> f11d6087cf3b2fd865875218db25dacd6e60115a
   }
 
   # Show full error reports and disable caching.
@@ -27,6 +31,13 @@ Rails.application.configure do
 
   # Disable request forgery protection in test environment.
   config.action_controller.allow_forgery_protection = false
+<<<<<<< HEAD
+=======
+
+  # Store uploaded files on the local file system in a temporary directory
+  config.active_storage.service = :test
+
+>>>>>>> f11d6087cf3b2fd865875218db25dacd6e60115a
   config.action_mailer.perform_caching = false
 
   # Tell Action Mailer not to deliver emails to the real world.

@@ -1,6 +1,7 @@
 {
   "name": "rails-mister-cocktail",
   "private": true,
+<<<<<<< HEAD
   "dependencies": {
     "@rails/webpacker": "^3.3.0",
     "bootstrap": "^4.3.1",
@@ -11,4 +12,7 @@
   "devDependencies": {
     "webpack-dev-server": "^2.11.1"
   }
+=======
+  "dependencies": {}
+>>>>>>> f11d6087cf3b2fd865875218db25dacd6e60115a
 }

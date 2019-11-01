@@ -3,8 +3,16 @@
 default: &default
   source_path: app/javascript
   source_entry_path: packs
+<<<<<<< HEAD
   public_output_path: packs
   cache_path: tmp/cache/webpacker
+=======
+  public_root_path: public
+  public_output_path: packs
+  cache_path: tmp/cache/webpacker
+  check_yarn_integrity: false
+  webpack_compile_output: false
+>>>>>>> f11d6087cf3b2fd865875218db25dacd6e60115a
 
   # Additional paths webpack should lookup modules
   # ['app/assets', 'engine/foo/app/assets']
@@ -13,7 +21,29 @@ default: &default
   # Reload manifest.json on all requests so we reload latest compiled packs
   cache_manifest: false
 
+<<<<<<< HEAD
   extensions:
+=======
+  # Extract and emit a css file
+  extract_css: false
+
+  static_assets_extensions:
+    - .jpg
+    - .jpeg
+    - .png
+    - .gif
+    - .tiff
+    - .ico
+    - .svg
+    - .eot
+    - .otf
+    - .ttf
+    - .woff
+    - .woff2
+
+  extensions:
+    - .mjs
+>>>>>>> f11d6087cf3b2fd865875218db25dacd6e60115a
     - .js
     - .sass
     - .scss
@@ -31,6 +61,12 @@ development:
   <<: *default
   compile: true
 
+<<<<<<< HEAD
+=======
+  # Verifies that correct packages and versions are installed by inspecting package.json, yarn.lock, and node_modules
+  check_yarn_integrity: true
+
+>>>>>>> f11d6087cf3b2fd865875218db25dacd6e60115a
   # Reference: https://webpack.js.org/configuration/dev-server/
   dev_server:
     https: false
@@ -48,7 +84,11 @@ development:
     headers:
       'Access-Control-Allow-Origin': '*'
     watch_options:
+<<<<<<< HEAD
       ignored: /node_modules/
+=======
+      ignored: '**/node_modules/**'
+>>>>>>> f11d6087cf3b2fd865875218db25dacd6e60115a
 
 
 test:
@@ -64,5 +104,11 @@ production:
   # Production depends on precompilation of packs prior to booting for performance.
   compile: false
 
+<<<<<<< HEAD
+=======
+  # Extract and emit a css file
+  extract_css: true
+
+>>>>>>> f11d6087cf3b2fd865875218db25dacd6e60115a
   # Cache manifest.json for performance
   cache_manifest: true

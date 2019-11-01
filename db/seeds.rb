@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require 'open-uri'
 
 puts "Destroy ingredients"
@@ -13,3 +14,12 @@ ingredients["drinks"].each do |ingredient|
   i = Ingredient.create(name: ingredient["strIngredient1"])
   puts "create #{i.name}"
 end
+=======
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)
+>>>>>>> f11d6087cf3b2fd865875218db25dacd6e60115a
